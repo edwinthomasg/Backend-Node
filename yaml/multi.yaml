@@ -1,0 +1,32 @@
+--- # Article data
+article:
+title: "Reading and Writing YAML to a File in Node.js/JavaScript"
+url_path: "/reading-and-writing-yaml-to-a-file-in-node-js-javascript"
+domain: "stackabuse.com"
+port: 443
+is-https: true
+meta:
+  published-at: "Nov. 1st, 2019"
+  author:
+    name: "Scott Robinson"
+    contact: "scott@stackabuse.com"
+  tags:
+    - javascript
+    - node.js
+    - web development
+...
+--- # Programming language
+  language: "JavaScript"
+  created-at: "December 4, 1995"
+  domain: "stackabuse.com"
+  creator: "Brendan Eich"
+...
+--- # Website
+  domain: "wikipedia.org"
+  created-at: "January 15, 2001"
+  num-languages: 304
+  num-articles: 51360771
+  creator:
+    - Jimmy Wales
+    - Larry Sanger
+...

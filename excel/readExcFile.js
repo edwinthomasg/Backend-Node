@@ -6,10 +6,11 @@ const wb = xlsx.readFile('./file.xlsx', {cellDates : true}) //options it will li
 
 const ws = wb.Sheets['casts']
 
+console.log(wb)
 
 let casts = xlsx.utils.sheet_to_json(ws)
-
-
+console.log(casts)
+console.log('type : ',typeof casts)
 const modifiedDoc = casts.map( record => {
     record.Special_Number = record.Age + 100
     return record
@@ -62,6 +63,6 @@ let users = [
   ];
 
   users = xlsx.utils.json_to_sheet(users)
-console.log(users)
+
   xlsx.utils.book_append_sheet(newWb,users,'book sheet')
   xlsx.writeFile(newWb,'test.xlsx')

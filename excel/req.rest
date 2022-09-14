@@ -1,0 +1,92 @@
+POST http://localhost:3020/
+Content-Type: application/json
+
+[{ 
+ "name" : "edwin",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+},
+{ 
+ "name" : "akash",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+},
+{ 
+ "name" : "saju",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+},
+{ 
+ "name" : "karthik",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+},
+{ 
+ "name" : "rannith",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+}]
+
+###
+
+POST http://localhost:3020/excel-js
+Content-Type: application/json
+
+[{ 
+ "name" : "ediee5",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-03" 
+},
+{ 
+ "name" : "akash",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-02" 
+},
+{ 
+ "name" : "saju",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+},
+{ 
+ "name" : "karthik",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+},
+{ 
+ "name" : "rannith",
+ "age" : 22, 
+ "company" : "aspire", 
+ "stack" : "mern", 
+ "location" : "chennai", 
+ "joined" : "2022-09-01" 
+}]
+
+###
+GET http://localhost:3020/sheet
