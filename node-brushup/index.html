@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sample</title>
+  </head>
+  <body>
+    <p>Hello</p>
+    <script>
+      //   "use strict";
+      //   number = 1000;
+      // console.log(this)
+      // this.age = 22
+      // function demo(){
+      //     console.log(this)
+      // }
+      // window.demo()
+      // function construct(message)
+      // {
+      //     this.message = message
+      //     console.log("function executed : ",this.message)
+      //     // console.log("message : ",this.message)
+      // }
+      // let newFun = construct('hello browser')
+      // console.log(newFun)
+      // console.log("funtion executed successfully")
+      // let objFun = new construct('hi brower')
+      // console.log(objFun, window.message)
+      // let person = {
+      //   name: "edwin",
+      //   display: function () {
+      //     console.log("Name : ", name);
+      //     console.log(this);
+      //     function demo() {
+      //       console.log("Inner Name : ", this);
+      //     }
+      //     demo();
+      //   },
+      // };
+      // person.display();
+
+      // let mapArray = {
+      //   items: [1, 2, 3, 4, 5],
+      //   map: function () {
+      //     console.log(this.items);
+      //     this.items.map(function (val) {
+      //       console.log(this.items); //no access to items because it refers to window object global context
+      //     });
+      //   },
+      // };
+      // mapArray.map();
+      // const arrow = () => console.log("arrow : ", this);
+      // arrow();
+      // const filterArray = {
+      //   items: [2, 4, 6, 8, 10],
+      //   filter: function () {
+      //     const result = this.items.filter((val) => {
+      //       console.log("items accessibility : ", this.items[0]);
+      //       return val % 4 == 0;
+      //     });
+      //     console.log("filter result : ", result);
+      //   },
+      // };
+      // filterArray.filter();
+      const user = {
+        name: "joey",
+        tvShow: "friends",
+        display() {
+          console.log(`This is ${this.name} from the tv show ${this.tvShow}`);
+        }
+      };
+      user.display();
+      console.log(Object.getPrototypeOf(user));
+    </script>
+  </body>
+</html>
