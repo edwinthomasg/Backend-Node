@@ -1,0 +1,12 @@
+name: server
+version: 0.0.1
+private: true
+scripts:
+  start: node test.js
+  start-dev: source dev.env; node test.js
+  start-prod: source prod.env; node test.js
+dependencies:
+  mysql: '*'
+tech:
+  - mongo
+  - express

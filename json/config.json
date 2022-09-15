@@ -1,0 +1,6 @@
+{
+  "server": {
+    "host": "local",
+    "port": 4040
+  }
+}

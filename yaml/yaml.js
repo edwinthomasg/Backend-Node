@@ -9,3 +9,5 @@ let multipleDocument = yaml.loadAll(multiData); //it will parse yaml to json for
 console.log(singleDocument);
 console.log(multipleDocument);
 
+
+
