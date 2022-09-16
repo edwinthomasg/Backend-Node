@@ -1,0 +1,45 @@
+{
+    "elapsedMilliseconds": 90,
+    "count": 125,
+    "screens": [
+      {
+        "id": "en-RP-100",
+        "title": "Portret van zanger en cabaretier Aristide Bruant",
+        "productionPlaces": [
+          [
+            "USA",
+            "Europe",
+            "Asia"
+          ],
+          [
+            "Studio",
+            "Apartment",
+            "Office"
+          ]
+        ],
+        "showImage": true,
+        "cameraType": [
+          "Instant camera",
+          "Multiplane camera",
+          "Press camera"
+        ]
+      },
+      {
+        "id": "en-RP-200",
+        "title": "Henri de Toulouse-Lautrec",
+        "productionPlaces": [
+          [
+            "Europe"
+          ],
+          [
+            "Studio",
+            "Building"
+          ]
+        ],
+        "showImage": true,
+        "cameraType": [
+          "Multiplane camera"
+        ]
+      }
+    ]
+  }

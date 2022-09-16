@@ -1,0 +1,46 @@
+JSON PATH : 
+
+Why ?
+It is a query to extract data from json document by writing an expression from its root node to the data the present inside the child node.
+The expression starts from root node represented by $ symbol and its child can be accessed by either . operator or [] notation.
+Eg : 
+{
+    "emplpoyee" : {
+        "name" : "ross",
+        "gender" : "male"
+    }
+}
+gender can be accessed by following expression,
+    $.employee.name.gender or
+    $['employee']['name']['gender']
+
+query method takes two parameters:
+ jp.query(object, expression) - returns array of elements if it matches the expression or empty array for no matches
+ jp.paths(object,  expression) - returns array of element paths and each path is array of keys representing the location
+ jp.nodes(object, expression) - returns array of node objects with path and values
+ jp.parent(object, expression) - returns the parent of first matching element
+ jp.apply(object, expression, fn) - fn allows us to modify the value and send it along with the response
+ jp.parse(expression) - will converts expresion to path components with operations done
+ /**
+ *  employee: {
+    name: "chandler",
+    stack: "mern",
+    strength: ["react", "node", "mongo", "express"],
+    skillPercentage: {
+      react: "90%",
+      node: "90%",
+      mongo: "90%",
+      express: "90%"
+    },
+    project: [
+      {
+        type: "ecommerce",
+        title: "amazon",
+      },
+      {
+        type: "business",
+        title: "prism",
+      }
+    ]
+  }
+ */
