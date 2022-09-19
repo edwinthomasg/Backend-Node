@@ -1,0 +1,30 @@
+--- # Bookings for a movie
+movie:
+  name: charlie
+  ticketCost: 190
+  seats: 
+    - A1
+    - A2
+    - B1
+    - B2
+  user: edwin@gmail.com
+  bookedOn: sep19,2022
+  age: 
+    - child: 1
+    - adult: 3
+...
+# --- # Bookings for a movie
+# movie:
+#   name: charlie
+#   ticketCost: 190
+#   seats: 
+#     - A1
+#     - A2
+#     - B1
+#     - B2
+#   user: edwin@gmail.com
+#   bookedOn: sep19,2022
+#   age: 
+#     - child: 1
+#     - adult: 3
+# ...

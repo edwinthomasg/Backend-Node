@@ -14,7 +14,7 @@ let users = [
     fname: "chandler",
     age: 22,
     gender: "male",
-    birth: new Date('2001/08/29')
+    birth: new Date('2001/08/27')
   },
   {
     fname: "ross",

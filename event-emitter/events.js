@@ -9,6 +9,7 @@ eventEmitter.on("newEvent", (cLang, javaLang) =>
 );
 
 eventEmitter.emit("newEvent", ...langs);
+
 eventEmitter.once(
   "newEvent",
   (
@@ -17,7 +18,7 @@ eventEmitter.once(
   ) => console.log("emitted : ", cLang, javaLang)
 );
 
-eventEmitter.on('error', (err) => {
-  console.error('oops there was an error');
-});
-eventEmitter.emit('error', new Error("oops"));
+// eventEmitter.on('error', (err) => {
+//   console.error('oops there was an error');
+// });
+// eventEmitter.emit('error', new Error("oops"));

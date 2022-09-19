@@ -10,3 +10,4 @@ eventEmitter.once("newListener", (event, listener) => {
 eventEmitter.on("print", () => console.log("emitted from outside"));
 
 eventEmitter.emit("print");
+// eventEmitter.emit("print");

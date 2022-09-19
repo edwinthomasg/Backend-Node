@@ -1,0 +1,45 @@
+[
+  {
+    "pr_name": "iphone",
+    "pr_type": "config",
+    "pr_color": "black",
+    "pr_price": 90000,
+    "pr_avl": 50
+  },
+  {
+    "pr_name": "samsung",
+    "pr_type": "simple",
+    "pr_color": "white",
+    "pr_price": 60000,
+    "pr_avl": 40
+  },
+  {
+    "pr_name": "redmi",
+    "pr_type": "config",
+    "pr_color": "black",
+    "pr_price": 20000,
+    "pr_avl": 40
+  },
+  {
+    "pr_name": "oneplus",
+    "pr_type": "simple",
+    "pr_color": "black",
+    "pr_price": 50000,
+    "pr_avl": 50
+  },
+  {
+    "pr_name": "vivo",
+    "pr_type": "simple",
+    "pr_color": "white",
+    "pr_price": 18000,
+    "pr_avl": 50
+  },
+  {
+    "pr_name": "iphone mini",
+    "pr_type": "config",
+    "pr_color": "gold",
+    "pr_price": 45000,
+    "pr_avl": 40
+  }
+ 
+]

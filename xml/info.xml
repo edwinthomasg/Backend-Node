@@ -1,0 +1,11 @@
+<result>
+  <user xmlns="user">
+    <name>edwin</name>
+    <age>22</age>
+    <stack>mern</stack>
+  </user>
+  <company xmlns="company">
+    <name>aspire</name>
+    <location>chennai</location>
+  </company>
+</result>

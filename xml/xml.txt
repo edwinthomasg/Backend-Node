@@ -1,0 +1,20 @@
+OPTIONS PARSE
+    tagNameProcessors - will recieve array of functions accepting attribute name,tag name
+    attrNameProcessors - will recieve array of functions accepting attribute name,tag name
+    valueProcessors - will recieve array of functions accepting value, name as arguments
+    attrValueProcessors - ""
+    normalizeTags: true - will return all the tags in lowercase
+    explicitRoot: true - only then we can get root node key or else it will be removed
+    explicitArray: true - put child nodes on array
+    ignoreAttrs: true - removes all attributes
+    emptyTag: 'value' - can specify the default value for the empty tags
+    mergeAttrs: true - it will merge the attribute specifier with it child key that is ${id:1} --> id:1
+
+----------------------------------------------------------------------------------------------------------------- 
+
+OPTIONS BUILDER
+    rootName: 'name' - if explicitRoot is false add root name
+    renderOpts({pretty: true,indent:' ',newline: '\n'})
+    xmldec({version:1.0,encoding:'utf-8',standalone:true})
+    headless: false - removes the versioning encoding tag
+ 

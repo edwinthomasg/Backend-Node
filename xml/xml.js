@@ -1,15 +1,18 @@
 const xml = require("xml2js");
 const fs = require("fs");
 
-const parser = new xml.Parser();
+const parser = new xml.Parser({
+  explicitRoot: true,
+  mergeAttrs: true
+});
 
-// fs.readFile("./data.xml", "utf-8", (err, data) => {
-//   if (err) throw err;
-//   parser.parseString(data, (err, data) => {
-//     console.dir(data, { depth: null });
-//     console.log(data.customer)
-//   });
-// });
+fs.readFile("./info.xml", "utf-8", (err, data) => {
+  if (err) throw err;
+  parser.parseString(data, (err, data) => {
+    console.dir(data, { depth: null });
+    // console.log("with parser : ", data.result);
+  });
+});
 
 // //promise based approach
 // fs.readFile("./data.xml", "utf-8", (err, data) => {
@@ -25,7 +28,7 @@ fs.readFile("./data.xml", "utf-8", (err, data) => {
   if (err) throw err;
   xml
     .parseStringPromise(data)
-    .then((data) => console.log(data))
+    .then((data) => console.log("without Parser : ",data))
     .catch((err) => console.log(err));
 });
 
@@ -67,6 +70,6 @@ let xmlData = builder.buildObject(product);
 let attributeData = builder.buildObject(attributeXml);
 let xmlnsData = builder.buildObject(xmlns);
 
-console.log(xmlData);
-console.log(attributeData);
-console.log(xmlnsData);
+console.log("with builder : ",xmlData);
+console.log("with attributes added : ",attributeData);
+console.log("with xml namespace : ",xmlnsData);

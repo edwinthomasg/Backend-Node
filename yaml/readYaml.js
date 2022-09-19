@@ -7,14 +7,14 @@ const parsedData = yaml.parseDocument(fileData); //yaml to json data
 const multiData = readFileSync("./multi.yaml", { encoding: "utf-8" });
 const multiParsedData = yaml.parseAllDocuments(multiData); //throws error because it can parse only single doc of yaml
 
-console.log(parsedData.contents);
-console.log(multiParsedData);
+// console.log("contents : ",parsedData);
+// console.log(multiParsedData);
 
-console.log(JSON.stringify(parsedData,null,2))
+console.log("json stringify : ",JSON.stringify(parsedData,null,2)) //stringified
 
-let result = yaml.stringify(parsedData)
-console.log(result)
-console.log(yaml.parse(result)) //string to json data
+let result = yaml.stringify(parsedData) 
+console.log("yaml stringify : ",result) //yml representation string
+console.log("string to json : ",yaml.parse(result)) //string to json data
 
 let newYamlDoc = new yaml.Document()
 newYamlDoc.version = true
@@ -23,7 +23,7 @@ newYamlDoc.contents = ['react','node','express','mongo', { stack : 'mern' }]
 console.log(String(newYamlDoc))
 console.log(yaml.stringify(newYamlDoc))
 
-writeFile('./newDocument.yaml',yaml.stringify(newYamlDoc),() => {
+writeFile('./newDocument.yaml',String(newYamlDoc),() => {
     console.log('successfully written ...')
 })
 

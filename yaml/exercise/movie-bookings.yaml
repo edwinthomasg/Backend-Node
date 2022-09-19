@@ -1,0 +1,18 @@
+- name: ross
+  movie: charlie
+  tickets:
+    - A1
+    - B1
+    - C2
+  age:
+    child: 1
+    adult: 3
+- name: chandler
+  movie: charlie
+  tickets:
+    - A1
+    - B2
+    - C2
+  age:
+    child: 2
+    adult: 2
