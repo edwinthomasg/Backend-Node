@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movie director="benito">
+	<name>
+		charlie
+	</name>
+	<genre>
+		drama
+	</genre>
+	<cast>
+		<actor>
+			dulquar
+		</actor>
+		<actress>
+			parvathi
+		</actress>
+	</cast>
+	<language>
+		malayalam
+	</language>
+</movie>

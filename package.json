@@ -11,8 +11,10 @@
     "jsonpath": "^1.1.1",
     "socket.io": "^4.5.2",
     "xlsx": "^0.18.5",
+    "xml-parse": "^0.4.0",
     "xml2js": "^0.4.23",
-    "xml2js-parser": "^1.1.1"
+    "xml2js-parser": "^1.1.1",
+    "xpath": "^0.0.32"
   },
   "devDependencies": {
     "js-yaml": "^4.1.0",

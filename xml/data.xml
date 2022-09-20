@@ -1,21 +1,50 @@
-<breakfast_menu>
-  <Food id="1">
-    <name>Belgian Waffles</name>
-    <price>$5.95</price>
-    <description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
-    <calories>650</calories>
-  </Food>
-  <Food id="2">
-    <name>Strawberry Belgian Waffles</name>
-    <price>$7.95</price>
-    <description>Light Belgian waffles covered with strawberries and whipped cream</description>
-    <calories>900</calories>
-  </Food>
-  <Food id="3">
-    <name>Berry-Berry Belgian Waffles</name>
-    <price>$8.95</price>
-    <description>Light Belgian waffles covered with an assortment of fresh berries and whipped cream</description>
-    <calories>900</calories>
-  </Food>
-  <end></end>
-</breakfast_menu>
+<?xml version="1.0" encoding="UTF-8"?>
+<breakfastmenu>
+	<Food id="1">
+		<name>
+			Belgian Waffles
+		</name>
+		<price type="dollars">
+			$5.95
+			<child>
+				child
+			</child>
+		</price>
+		<description>
+			Two of our famous Belgian Waffles with plenty of real maple syrup
+		</description>
+		<calories>
+			650
+		</calories>
+	</Food>
+	<Food id="2">
+		<name>
+			Strawberry Belgian Waffles
+		</name>
+		<price>
+			$7.95
+		</price>
+		<description>
+			Light Belgian waffles covered with strawberries and whipped cream
+		</description>
+		<calories>
+			900
+		</calories>
+	</Food>
+	<Food id="3">
+		<name>
+			Berry-Berry Belgian Waffles
+		</name>
+		<price>
+			$8.95
+		</price>
+		<description>
+			Light Belgian waffles covered with an assortment of fresh berries and whipped cream
+		</description>
+		<calories>
+			900
+		</calories>
+	</Food>
+	<end>
+	</end>
+</breakfastmenu>
