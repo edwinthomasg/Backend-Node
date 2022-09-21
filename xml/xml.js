@@ -8,9 +8,10 @@ const parser = new xml.Parser({
 
 fs.readFile("./info.xml", "utf-8", (err, data) => {
   if (err) throw err;
+  console.log(data)
   parser.parseString(data, (err, data) => {
     console.dir(data, { depth: null });
-    // console.log("with parser : ", data.result);
+    console.log("with parser : ", data.result);
   });
 });
 

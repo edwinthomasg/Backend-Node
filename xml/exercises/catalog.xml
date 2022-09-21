@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog>
+	<person>
+		<name>
+			John
+		</name>
+		<surname>
+			Smith
+		</surname>
+		<fullname>
+			FULL NAME
+		</fullname>
+	</person>
+	<person>
+		<name>
+			Abe
+		</name>
+		<surname>
+			Lincoln
+		</surname>
+		<fullname>
+			FULL NAME
+		</fullname>
+	</person>
+	<person>
+		<name>
+			James
+		</name>
+		<surname>
+			Bond
+		</surname>
+		<fullname>
+			FULL NAME
+		</fullname>
+	</person>
+</catalog>

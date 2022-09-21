@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+<bookstore>
+
+  
+<book category="COOKING">
+
+    
+<title lang="en">
+Samayal
+</title>
+
+    
+<author>
+Chennai Foods
+</author>
+
+    
+<year>
+2005
+</year>
+
+    
+<price>
+30
+</price>
+
+  
+</book>
+
+  
+<book category="children">
+
+    
+<title lang="en">
+Kutti story
+</title>
+
+    
+<author>
+William
+</author>
+
+    
+<year>
+2004
+</year>
+
+    
+<price>
+40
+</price>
+
+  
+</book>
+
+  
+<book category="WEB">
+
+    
+<title lang="en">
+React
+</title>
+
+    
+<author>
+Code Developer
+</author>
+
+    
+<year>
+2000
+</year>
+
+    
+<price>
+20
+</price>
+
+  
+</book>
+</bookstore>
