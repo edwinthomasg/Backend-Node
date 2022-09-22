@@ -67,25 +67,27 @@ let xmlData = {
 
 let builder = new xmljs.Builder();
 let xmlConvertData = builder.buildObject(xmlData);
-writeFile("./book.xml", xmlConvertData, () =>
-  console.log("file written successfully..")
-);
-let valueToLowerCase = (value) => value.toLowerCase();
 let parser = new xmljs.Parser({
-  attrValueProcessors: [valueToLowerCase],
   mergeAttrs: true,
   explicitArray: false,
   explicitRoot: false,
   trim: false,
+});
+console.log(xmlConvertData);
+printLine();
+xmlConvertData = xmlConvertData.replaceAll(/\s+(?=<)/ig, "");
+
+writeFile("./book.xml", xmlConvertData, () => {
+  console.log("file written successfully..");
 });
 
 readFile("./book.xml", "utf-8", (err, data) => {
   if (err) throw err;
   let parsedXml = xml.parse(data);
   printData("parsed data", parsedXml);
-  //   parser.parseString(data,(err, result) => {
-  //     printData("to upper case : ",result)
-  //   })
+  parser.parseString(data, (err, result) => {
+    printData("to upper case : ", result);
+  });
   let xmlDOm = new xml.DOM(parsedXml);
   printData("xml dom", xmlDOm);
   let { document } = xmlDOm;
@@ -95,15 +97,12 @@ readFile("./book.xml", "utf-8", (err, data) => {
   )[0].attributes.category = "children";
   printData("after updating the attribute", parsedXml);
   let editedData = xml.stringify(parsedXml);
-
+  editedData = editedData.replaceAll("\n", "");
   writeFile("./book.xml", editedData, () => {
     console.log("file edited succesfully");
     readFile("./book.xml", "utf-8", (err, data) => {
       if (err) throw err;
       console.dir(xml.parse(data), { depth: null });
-      parser.parseString(data, (err, result) => {
-        console.dir(result, { depth: null });
-      });
     });
   });
 });

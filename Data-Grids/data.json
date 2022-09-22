@@ -1,0 +1,85 @@
+[{
+  "name": "edwin",
+  "age": 22,
+  "stack": "mern",
+  "company": "aspire",
+  "location": "chennai"
+},{
+    "name": "saju",
+    "age": 22,
+    "stack": "perl",
+    "company": "aspire",
+    "location": "chennai"
+  },{
+    "name": "karthi",
+    "age": 22,
+    "stack": "mern",
+    "company": "aspire",
+    "location": "hyderabad"
+  },{
+    "name": "vasi",
+    "age": 22,
+    "stack": "mean",
+    "company": "aspire",
+    "location": "hyderabad"
+  },{
+    "name": "rannith",
+    "age": 22,
+    "stack": "mern",
+    "company": "aspire",
+    "location": "chennai"
+  },{
+    "name": "akash",
+    "age": 22,
+    "stack": "oracle",
+    "company": "aspire",
+    "location": "hyderabad"
+  },{
+    "name": "joey",
+    "age": 22,
+    "stack": "mean",
+    "company": "zoho",
+    "location": "hyderabad"
+  },{
+    "name": "chandler",
+    "age": 22,
+    "stack": "mern",
+    "company": "wipro",
+    "location": "hyderabad"
+  },{
+    "name": "ross",
+    "age": 22,
+    "stack": "mean",
+    "company": "infosys",
+    "location": "chennai"
+  },{
+    "name": "monica",
+    "age": 22,
+    "stack": "mean",
+    "company": "infosys",
+    "location": "chennai"
+  },{
+    "name": "rach",
+    "age": 22,
+    "stack": "mern",
+    "company": "cts",
+    "location": "hyderabad"
+  },{
+    "name": "shelby",
+    "age": 22,
+    "stack": "mean",
+    "company": "cts",
+    "location": "hyderabad"
+  },{
+    "name": "professor",
+    "age": 22,
+    "stack": "mean",
+    "company": "tcs",
+    "location": "chennai"
+  },{
+    "name": "kohli",
+    "age": 22,
+    "stack": "mean",
+    "company": "tcs",
+    "location": "chennai"
+  }]

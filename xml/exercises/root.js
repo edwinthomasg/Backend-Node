@@ -30,13 +30,13 @@ const printData = (statement, result) => {
 };
 
 let builder = new xmljs.Builder();
+let xmlConvertedData = builder.buildObject(rootData)
+xmlConvertedData =xmlConvertedData.replaceAll(/\s+(?=<)/ig,"")
 
-console.log(builder.buildObject(rootData));
-
-// writeFile("./root.xml", builder.buildObject(rootData), () => {
-//   console.log("data written succesfully");
-//   printLine();
-// });
+writeFile("./root.xml",xmlConvertedData, () => {
+  console.log("data written succesfully");
+  printLine();
+});
 
 readFile("./root.xml", "utf-8", (err, data) => {
   if (err) throw err;
@@ -85,5 +85,6 @@ readFile("./root.xml", "utf-8", (err, data) => {
   printData("after appending note doc",noteDoc)
   console.log("length : ",noteDoc.childNodes.length)
   let editedXmlData = xml.stringify(parseXml)
+  editedXmlData = editedXmlData.replaceAll("\n","")
   writeFile('./root.xml',editedXmlData, () => console.log("xml file updated successfully"))
 });
