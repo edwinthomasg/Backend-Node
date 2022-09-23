@@ -34,7 +34,6 @@ let gridOptions = {
     editable: true,
     resizable: true,
     floatingFilter: true,
-    columnGroupShow: "open",
     filter: "agTextColumnFilter",
   },
   columnTypes: {
@@ -61,6 +60,7 @@ fetch("https://mocki.io/v1/9bf4a42e-8724-482a-976e-3ecac0058f7b")
   .then((data) => data.json())
   .then((result) => {
     gridOptions.api.setRowData(result);
+    
   })
   .catch((err) => {
     console.log(err);

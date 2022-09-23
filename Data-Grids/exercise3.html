@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Grids</title>
+    <!-- Include the JS for AG Grid -->
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <!-- Include the core CSS, this is needed by the grid -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/styles/ag-grid.css"
+    />
+    <!-- Include the theme CSS, only need to import the theme you are going to use -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/styles/ag-theme-alpine.css"
+    />
+  </head>
+  <body>
+    <button type="button" onclick="showData()">Show Selected Data</button>
+    <div id="grid" class="ag-theme-alpine" style="height: 500px;"></div>
+    <button type="button" onclick="unselectRow()">Clear All</button>
+    <script src="ex3.js"></script>
+  </body>
+</html>
