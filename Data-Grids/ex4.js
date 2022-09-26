@@ -19,48 +19,53 @@ let gridOptions = {
       headerName: "RESULT",
       groupId: "result",
       children: [
-        { headerName: "num1 + num2", colId: "+", valueGetter: addTwoNumbers,type: "modelColumn" },
+        {
+          headerName: "num1 + num2",
+          colId: "+",
+          valueGetter: addTwoNumbers,
+          type: "modelColumn",
+        },
         {
           headerName: "num1 - num2",
           valueGetter: subTwoNumbers,
           valueFormatter: toDecimal,
-          type: "modelColumn"
+          type: "modelColumn",
         },
-        { headerName: "num1 * num2", valueGetter: multiplyTwoNumbers, type: "modelColumn" },
-        { headerName: "num1 / num2", valueGetter: divideTwoNumbers, type: "modelColumn" },
-        { headerName: "special number", valueGetter: generateSpecial, type: "modelColumn" },
-        { headerName: "show", columnGroupShow: "closed"}
+        {
+          headerName: "num1 * num2",
+          valueGetter: multiplyTwoNumbers,
+          type: "modelColumn",
+        },
+        {
+          headerName: "num1 / num2",
+          valueGetter: divideTwoNumbers,
+          type: "modelColumn",
+        },
+        {
+          headerName: "special number",
+          valueGetter: generateSpecial,
+          type: "modelColumn",
+        },
+        { headerName: "show", field: "show", columnGroupShow: "closed" },
       ],
     },
   ],
   rowData: [
-    { num1: 10, num2: 20, type: { app: "calculator" } },
-    { num1: 30, num2: 10, type: { app: "calculator" } },
+    { num1: 10, num2: 20, type: { app: "calculator" }, show: "show" },
+    { num1: 30, num2: 10, type: { app: "calculator" }, show: "show" },
   ],
   defaultColDef: {
     width: 150,
     resizable: true,
   },
-  defaultColGroupDef: {
-    marryChildren: true     
-  },
   columnTypes: {
-    modelColumn: { columnGroupShow: "open" }
-  }
+    modelColumn: { columnGroupShow: "open" },
+  },
 
-//   suppressFieldDotNotation: true, all the nested referenced value will be vanished
+  //   suppressFieldDotNotation: true, all the nested referenced value will be vanished
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   let grid = document.querySelector("#grid");
   new agGrid.Grid(grid, gridOptions);
 });
-
-
-
-
-
-
-
-
-

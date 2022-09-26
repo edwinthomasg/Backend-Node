@@ -1,0 +1,14 @@
+--- # cricketer data
+name: virat
+age: 33
+nation: "India"
+matches: 200
+playedAgainst:
+  - australia: 
+      - matches: 20
+      - runs: 1000
+  - pakistan:
+      - matches: 15
+      - runs: 800
+totalAvg: 80
+...
