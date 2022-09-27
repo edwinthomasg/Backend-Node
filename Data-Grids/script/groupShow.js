@@ -57,14 +57,18 @@ let gridOptions = {
   defaultColDef: {
     width: 150,
     resizable: true,
+    minWidth: 100 //column cant be resized below the min width
   },
   columnTypes: {
     modelColumn: { columnGroupShow: "open" },
   },
-
+  groupHeaderHeight: 110, //applied to only the group headers
+  headerHeight: 60, //applied to all the headers
   //   suppressFieldDotNotation: true, all the nested referenced value will be vanished
 };
-
+let changeHeight = () => {
+  gridOptions.api.setHeaderHeight(100) //dynamicly change the height
+}
 document.addEventListener("DOMContentLoaded", () => {
   let grid = document.querySelector("#grid");
   new agGrid.Grid(grid, gridOptions);

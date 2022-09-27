@@ -19,10 +19,13 @@
     />
   </head>
   <body>
-    <button type="button" onclick="clickHandler()" id="unselect">
-      Unselect
-    </button>
-    <div id="grid" style="height: 500px" class="ag-theme-alpine"></div>
-    <script src="ex2.js"></script>
+    <button type="button" onclick="sort()">Sort</button>
+    <button type="button" onclick="removeSort()">Remove Sort</button>
+    <div style="height: 500px" class="ag-theme-alpine" id="grid"></div>
+    <script src="../script/columnEvents.js"></script>
   </body>
 </html>
+
+<!-- 
+    Events triggered whenever there is a change in column definition
+ -->

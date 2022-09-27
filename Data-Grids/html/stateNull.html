@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Grid</title>
+    <title>Data Grids</title>
     <!-- Include the JS for AG Grid -->
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
     <!-- Include the core CSS, this is needed by the grid -->
@@ -19,12 +19,10 @@
     />
   </head>
   <body>
-    <button type="button" onclick="include()">Include</button>
-    <button type="exclude" onclick="exclude()">Exclude</button>
-    <button type="exclude" onclick="removeHeader()">Remove Header</button>
-    <button type="exclude" onclick="includeHeader()">Include Header</button>
-    <button type="button" onclick="toUpper()">upper case</button>
-    <div class="ag-theme-alpine" id="grid" style="height: 500px;"></div>
-    <script src="ex6.js"></script>
+    <body>
+        <button type="button" onclick="sort()">Sort</button>
+      <div id="grid" class="ag-theme-alpine" style="height: 500px"></div>
+      <script src="../script/stateNull.js"></script>
+    </body>
   </body>
 </html>

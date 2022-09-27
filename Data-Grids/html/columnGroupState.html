@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Grids</title>
     <!-- Include the JS for AG Grid -->
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
@@ -19,14 +16,10 @@
     />
   </head>
   <body>
-    <body>
-      <button onclick="set1()">Column Order 1</button>
-      <button onclick="set2()">Column Order 2</button>
-      <button onclick="saveState()">Save State</button>
-      <button onclick="restoreState()">Restore State</button>
-      <button onclick="reset()">Reset</button>
-      <div id="grid" class="ag-theme-alpine" style="height: 500px"></div>
-      <script src="ex10.js"></script>
-    </body>
+    <button type="button" onclick="save()">Save</button>
+    <button type="button" onclick="restore()">Restore</button>
+    <button type="button" onclick="reset()">Reset</button>
+    <div class="ag-theme-alpine" id="grid" style="height: 500px"></div>
+    <script src="../script/columnGroupState.js"></script>
   </body>
 </html>

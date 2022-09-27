@@ -19,10 +19,16 @@
     />
   </head>
   <body>
-    <button type="button" onclick="setState()">Set State</button>
-    <button type="button" onclick="remove()">Remove Columns</button>
-    <button type="button" onclick="removePinned()">Remove Pinned</button>
+    <button type="button" onclick="resize()">Resize</button>
+    <button type="button" onclick="noGroup()">No Group</button>
+    <button type="button" onclick="participant()">Participant</button>
+    <button type="button" onclick="medals()">Medals</button>
+    <button type="button" onclick="participant_medals()">Medals and Participant</button>
     <div style="height: 500px" class="ag-theme-alpine" id="grid"></div>
-    <script src="ex9.js"></script>
+    <script src="../script/columnGroup.js"></script>
   </body>
 </html>
+
+<!-- 
+    Events triggered whenever there is a change in column definition
+ -->

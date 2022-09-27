@@ -1,10 +1,10 @@
 let gridOptions = {
   columnDefs: [
-    { field: "name", type: "pinned" },
-    { field: "age", type: "numberFilter" },
-    { field: "stack" },
-    { field: "company" },
-    { field: "location" },
+    { field: "name", type: "pinned", headerTooltip: "name of the employee" },
+    { field: "age", type: "numberFilter" , headerTooltip: "age of the employee"},
+    { field: "stack", headerTooltip: "stack the employee belongs too" },
+    { field: "company", headerTooltip: "company the employee working" },
+    { field: "location", headerTooltip: "location the employee is from" },
   ],
   rowSelection: "multiple",
   defaultColDef: {
@@ -14,6 +14,7 @@ let gridOptions = {
     resizable: true,
     // initialHide: false
   },
+  tooltipShowDelay: 500,
   columnTypes: {
     numberFilter: { filter: "agNumberColumnFilter" },
     pinned: { initialPinned: "right" },

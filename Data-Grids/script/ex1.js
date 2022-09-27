@@ -25,7 +25,10 @@ let gridOptions = {
   defaultColDef: {
     sortable: true,
     filter: true,
+    floatingFilter: true
   },
+  headerHeight: 100,
+  floatingFiltersHeight: 50,
   rowSelection: "multiple", //can select multiple rows
   animateRows: true,
   onCellClicked: (cell) => console.log(cell.data),

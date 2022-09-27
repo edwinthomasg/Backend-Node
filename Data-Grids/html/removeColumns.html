@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Grids</title>
+    <title>Data Grid</title>
     <!-- Include the JS for AG Grid -->
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
     <!-- Include the core CSS, this is needed by the grid -->
@@ -19,9 +19,12 @@
     />
   </head>
   <body>
-    <button type="button" onclick="formatValue()">Format Value</button>
-    <button type="button" onclick="removeFormat()">Back to Original</button>
-    <div style="height: 500px" class="ag-theme-alpine" id="grid"></div>
-    <script src="ex7.js"></script>
+    <button type="button" onclick="include()">Include</button>
+    <button type="exclude" onclick="exclude()">Exclude</button>
+    <button type="exclude" onclick="removeHeader()">Remove Header</button>
+    <button type="exclude" onclick="includeHeader()">Include Header</button>
+    <button type="button" onclick="toUpper()">upper case</button>
+    <div class="ag-theme-alpine" id="grid" style="height: 500px;"></div>
+    <script src="../script/removeColumns.js"></script>
   </body>
 </html>

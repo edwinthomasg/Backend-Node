@@ -16,9 +16,13 @@
     />
   </head>
   <body>
-    <button type="button" onclick="showData()">Show Selected Data</button>
-    <div id="grid" class="ag-theme-alpine" style="height: 500px;"></div>
-    <button type="button" onclick="unselectRow()">Clear All</button>
-    <script src="ex3.js"></script>
+    <button type="button" onclick="moveMedalsFirst()">Move Medals to 1st</button>
+    <button type="button" onclick="moveCountry()">Move Country to 1st</button>
+    <button type="button" onclick="moveMedalsLast()">Move Medals to last</button>
+    <button type="button" onclick="swapTwo()">Swap 1st two</button>
+    <button type="button" onclick="print()">Print</button>
+
+    <div class="ag-theme-alpine" id="grid" style="height: 500px"></div>
+    <script src="../script/columnMoving.js"></script>
   </body>
 </html>

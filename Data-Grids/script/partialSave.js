@@ -13,7 +13,8 @@ let columnDefs = [
 let gridOptions = {
   columnDefs: columnDefs,
   defaultColDef: {
-    width: 150,
+    // width: 150,
+    flex: 100,
     resizable: true,
     sortable: true,
     sort: "desc",
