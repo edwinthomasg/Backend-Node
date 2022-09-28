@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Grids</title>
+    <!-- Include the JS for AG Grid -->
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <!-- Include the core CSS, this is needed by the grid -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/styles/ag-grid.css"
+    />
+    <!-- Include the theme CSS, only need to import the theme you are going to use -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/styles/ag-theme-alpine.css"
+    />
+  </head>
+  <body>
+    <button type="button" onclick="clearPin()">Clear Pinned</button>
+    <button type="button" onclick="left()">Pin left</button>
+    <button type="button" onclick="leftCountry()">Left country</button>
+    Show <input type="text" id="row" placeholder="row" oninput="row()">
+    <input type="text" id="col" placeholder="col" oninput="col()">
+    <div class="ag-theme-alpine" id="grid" style="height: 500px"></div>
+    <script src="../script/columnPinning.js"></script>
+  </body>
+</html>

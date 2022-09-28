@@ -8,7 +8,7 @@ let gridOptions = {
     { field: "country" },
     { field: "date" },
     { field: "total" },
-    { field: "gold" },
+    { field: "gold", lockPosition: "left" },
     { field: "silver" },
     { field: "bronze" },
   ],
@@ -16,8 +16,9 @@ let gridOptions = {
     resizable: true,
     
   },
-  suppressColumnMoveAnimation: true,
-  suppressDragLeaveHidesColumns: true
+    // suppressColumnMoveAnimation: true,
+    // suppressDragLeaveHidesColumns: true,
+    // suppressMovableColumns: true
 };
 let moveMedalsFirst = () => {
   gridOptions.columnApi.moveColumns(["gold", "silver", "bronze", "total"], 0);
