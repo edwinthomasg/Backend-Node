@@ -18,12 +18,12 @@ let gridOptions = {
   defaultColDef: {
     resizable: true,
   },
-  //   onGridReady: () => {
-  //     gridOptions.api.sizeColumnsToFit()
-  //   }
+  // onGridReady: () => {
+  //   gridOptions.api.sizeColumnsToFit();
+  // },
 };
 let fitSize = () => {
-    console.log("clicked")
+  console.log("clicked");
   gridOptions.api.sizeColumnsToFit();
 };
 document.addEventListener("DOMContentLoaded", () => {

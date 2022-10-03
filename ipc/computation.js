@@ -7,7 +7,6 @@ function doComputation(){
 
 process.on('message', () => {
     const result = doComputation()
-    console.log("result : ",result)
     process.send(result)
 })
 

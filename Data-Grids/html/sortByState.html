@@ -16,13 +16,12 @@
     />
   </head>
   <body>
-    <button type="button" onclick="sort()">Sort</button>
-    <button type="button" onclick="removeSort()">Remove Sort</button>
-    <div style="height: 500px" class="ag-theme-alpine" id="grid"></div>
-    <script src="../script/columnEvents.js"></script>
+    <button type="button" onclick="athleteAsc()">Sort athlete ascending</button>
+    <button type="button" onclick="athleteDesc()">Sort athlete descending</button>
+    <button type="button" onclick="countryFirst()">Country then sport</button>
+    <button type="button" onclick="sportFirst()">Sport then country</button>
+
+    <div class="ag-theme-alpine" id="grid" style="height: 500px"></div>
+    <script src="../script/sortByState.js"></script>
   </body>
 </html>
-
-<!-- 
-    Events triggered whenever there is a change in column definition
- -->

@@ -1,4 +1,8 @@
-let dateComparator = (date1, date2) => formatDate(date1) - formatDate(date2);
+let dateComparator = (date1, date2) => {
+  console.log(formatDate(date1));
+  console.log(formatDate(date2));
+  return formatDate(date1) - formatDate(date2);
+};
 
 let formatDate = (date) => {
   if (date === undefined || date === null || date.length !== 10) {

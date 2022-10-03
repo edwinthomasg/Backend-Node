@@ -14,11 +14,16 @@ let gridOptions = {
   ],
   defaultColDef: {
     resizable: true,
-    
   },
-    // suppressColumnMoveAnimation: true,
-    // suppressDragLeaveHidesColumns: true,
-    // suppressMovableColumns: true
+  // suppressColumnMoveAnimation: true,
+  // suppressDragLeaveHidesColumns: true,
+  // suppressMovableColumns: true
+};
+let resize = () => {
+  gridOptions.api.sizeColumnsToFit({
+    defaultMinWidth: 100
+  })
+  
 };
 let moveMedalsFirst = () => {
   gridOptions.columnApi.moveColumns(["gold", "silver", "bronze", "total"], 0);
@@ -34,9 +39,9 @@ let swapTwo = () => {
 };
 let print = () => {
   gridOptions.columnApi.getAllGridColumns().map((col, index) => {
-    console.log("index : ",index)
-    console.log("col : ",col.getColId())
-  })
+    console.log("index : ", index);
+    console.log("col : ", col.getColId());
+  });
 };
 new agGrid.Grid(grid, gridOptions);
 

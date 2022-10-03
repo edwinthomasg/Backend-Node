@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Grid</title>
-    <!-- Include the JS for AG Grid -->
-    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
-    <!-- Include the core CSS, this is needed by the grid -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/ag-grid-community/styles/ag-grid.css"
-    />
-    <!-- Include the theme CSS, only need to import the theme you are going to use -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/ag-grid-community/styles/ag-theme-alpine.css"
-    />
+    <script src="https://unpkg.com/ag-grid-enterprise@28.1.3/dist/ag-grid-enterprise.min.js"></script>
   </head>
   <body>
-    <div class="ag-theme-alpine" id="grid" style="height: 500px;"></div>
+    <button type="button" onclick="forEachNode()">for each node</button>
+    <button type="button" onclick="forEachNodeAfterFilter()">forEachNodeAfterFilter</button>
+    <button type="button" onclick="forEachNodeAfterFilterAndSort()">forEachNode AfterFilterAndSort</button>
+    <button type="button" onclick="forEachLeafNode()">For Each LeafNode</button>
+    <div class="ag-theme-alpine" id="grid" style="height: 500px"></div>
     <script src="../script/rowId.js"></script>
   </body>
 </html>
