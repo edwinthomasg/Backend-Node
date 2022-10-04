@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Grid</title>
+    <title>Data Grids</title>
     <!-- Include the JS for AG Grid -->
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
     <!-- Include the core CSS, this is needed by the grid -->
@@ -19,8 +16,11 @@
     />
   </head>
   <body>
-    <div class="ag-theme-alpine" id="grid" style="height: 500px"></div>
-    <script src="../script/colId.js"></script>
+    <body>
+      <button type="button" onclick="set1()">Set 1</button>
+      <button type="button" onclick="set2()">Set 2</button>
+      <div id="grid" class="ag-theme-alpine" style="height: 500px"></div>
+      <script src="../script/updateById.js"></script>
+    </body>
   </body>
 </html>
-
